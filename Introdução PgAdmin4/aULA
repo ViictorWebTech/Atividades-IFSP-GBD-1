@@ -1,0 +1,36 @@
+CREATE TABLE CARRO
+    (Placa VARCHAR(10),
+     Modelo VARCHAR(40) NOT NULL,
+     Ano INTEGER,
+     CONSTRAINT PK_CARRO PRIMARY KEY(Placa)
+      );
+      
+    INSERT INTO CARRO VALUES ('MHJ-2716','PRISMA',2014),
+    ('TKF-8352','CIVIC SI',2021),
+    ('BLK-1638','ESCORT GL',1988);
+    
+    SELECT * FROM CARRO;
+    
+    --Exercícios
+    
+    CREATE TABLE LIVRO
+    (ISBN INTEGER,
+     titulo VARCHAR(50) NOT NULL,
+     genero VARCHAR(30),
+     dtaLanc DATE,
+     CONSTRAINT PK_LIVRO PRIMARY KEY(ISBN)
+     );
+     
+     INSERT INTO LIVRO VALUES('1','Emoji','Animação','2017-08-31'),
+     ('2','Carros 3','Animação','2017-07-13'),
+     ('3','Planeta dos Macacos: A Guerra','Aventura','2017-08-03'),
+     ('4','Transformers: O Último cavaleiro','Aventura','2017-07-20'),
+     ('5','Missão Impossível: Efeito Fallout','Aventura','2018-07-26'),
+     ('6','Nasce Uma Estrela','Drama','2018-10-11');
+     
+     SELECT * FROM LIVRO
+     
+     
+    
+    
+      
